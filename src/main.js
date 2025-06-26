@@ -26,6 +26,7 @@ flatpickr(inputEL, {
         }
 
         startBtn.addEventListener('click', () => {
+            inputEL.disabled=true
             setInterval(() => {
                 const curDate = Date.now()
                 const delta = userSelectedDate - curDate
