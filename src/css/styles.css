@@ -8,11 +8,68 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+input,
+label {
+  display: block;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+input {
+  border: 1px solid #4e75ff;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  outline: none;
+  margin-bottom: 32px;
+  padding: 0 16px;
+}
+
+button[data-start] {
+  border: none;
+  display: block;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  cursor: pointer;
+}
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.timer {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  width: 346px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+span.label {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+span.value {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
